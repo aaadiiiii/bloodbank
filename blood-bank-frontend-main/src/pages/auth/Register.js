@@ -15,7 +15,7 @@ const Register = () => {
           <div className="col-md-8 form-banner ">
             <img src="./assets/images/bb1.avif" alt="registerImage" />
           </div>
-          <div className="col-md-4 form-container">
+          <div className="col-md-4 form-container" style={{"backgroundColor":"grey"}}>
             <Form
               formTitle={"Register"}
               submitBtn={"Register"}

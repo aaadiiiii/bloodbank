@@ -15,7 +15,7 @@ const Login = () => {
           <div className="col-md-8 form-banner">
             <img src="./assets/images/bb.jpg" alt="loginImage" />
           </div>
-          <div className="col-md-4 form-container">
+          <div className="col-md-4 form-container" style={{"backgroundColor":"grey"}}>
             <Form
               formTitle={"Login Page"}
               submitBtn={"Login"}
