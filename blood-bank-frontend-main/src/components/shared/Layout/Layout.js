@@ -12,7 +12,7 @@ const Layout = ({ children }) => {
         <div className="col-md-3">
           <Sidebar />
         </div>
-        <div className="col-md-9">{children}</div>
+        <div className="col-md-9" style={{"backgroundColor":"grey"}}>{children}</div>
       </div>
     </>
   );
