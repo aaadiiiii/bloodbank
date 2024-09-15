@@ -15,7 +15,7 @@ const Modal = () => {
       if (!bloodGroup || !quantity) {
         return alert("Please Provide All Fields");
       }
-      const { data } = await API.post("http://localhost:8080/api/v1/inventory/create-inventory", {
+      const { data } = await API.post("https://bloodbank-eo50.onrender.com/api/v1/inventory/create-inventory", {
         email,
         organisation: user?._id,
         inventoryType,

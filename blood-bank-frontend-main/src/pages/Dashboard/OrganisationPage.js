@@ -12,7 +12,7 @@ const OrganisationPage = () => {
   const getOrg = async () => {
     try {
       if (user?.role === "donar") {
-        const { data } = await API.get("http://localhost:8080/api/v1/inventory/get-orgnaisation");
+        const { data } = await API.get("https://bloodbank-eo50.onrender.com/api/v1/inventory/get-orgnaisation");
         //   console.log(data);
         if (data?.success) {
           setData(data?.organisations);
@@ -20,7 +20,7 @@ const OrganisationPage = () => {
       }
       if (user?.role === "hospital") {
         const { data } = await API.get(
-          "http://localhost:8080/api/v1/inventory/get-orgnaisation-for-hospital"
+          "https://bloodbank-eo50.onrender.com/api/v1/inventory/get-orgnaisation-for-hospital"
         );
         //   console.log(data);
         if (data?.success) {

@@ -8,7 +8,7 @@ const DonarList = () => {
   //find donar records
   const getDonars = async () => {
     try {
-      const { data } = await API.get("http://localhost:8080/api/v1/admin/donar-list");
+      const { data } = await API.get("https://bloodbank-eo50.onrender.com/api/v1/admin/donar-list");
       //   console.log(data);
       if (data?.success) {
         setData(data?.donarData);

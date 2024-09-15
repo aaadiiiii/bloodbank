@@ -16,7 +16,7 @@ const HomePage = () => {
   const getBloodRecords = async () => {
     try {
       
-      const { data } = await API.get("http://localhost:8080/api/v1/inventory/get-inventory");
+      const { data } = await API.get("https://bloodbank-eo50.onrender.com/api/v1/inventory/get-inventory");
       if (data?.success) {
         setData(data?.inventory);
         // console.log(data);

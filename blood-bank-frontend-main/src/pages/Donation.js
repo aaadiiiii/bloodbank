@@ -10,7 +10,7 @@ const Donation = () => {
   //find donar records
   const getDonars = async () => {
     try {
-      const { data } = await API.post("http://localhost:8080/api/v1/inventory/get-inventory-hospital", {
+      const { data } = await API.post("https://bloodbank-eo50.onrender.com/api/v1/inventory/get-inventory-hospital", {
         filters: {
           inventoryType: "in",
           donar: user?._id,

@@ -9,7 +9,7 @@ const ProtectedRoute = ({ children }) => {
   //get user current
   const getUser = async () => {
     try {
-      const { data } = await API.get("http://localhost:8080/api/v1/auth/current-user");
+      const { data } = await API.get("https://bloodbank-eo50.onrender.com/api/v1/auth/current-user");
       if (data?.success) {
         dispatch(getCurrentUser(data));
       }
